@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WoodsonDelhia</title>
+  <title><%= content_for(:title) ? yield(:title) : 'Woodson Delhia'  %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<div id="container">
+		<header>
+			<div class="logo">
+				<a href="#">Woodson Delhia</a>
+				<p>In pursuit to becoming a Software Developer.</p>
+			</div>
 
-<%= yield %>
+			<ul id="nav">
+				<li><a href="#">About Me</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">School</a></li>
+				<li><a href="#">Schedule</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Contact Me</a></li>	
+			</ul>
 
+			<div class="contact-link">
+				Contact me | <a href="#">woodsondelhia@hotmail.com</a>
+			</div>
+
+
+		</header>
+
+		
+		<%= yield %>
+	</div>
 </body>
 </html>

@@ -13,3 +13,69 @@
  *= require_tree .
  *= require_self
  */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,700,600,400);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*Take width and add onto padding */
+}
+
+body {
+	font-family: 'Open Sans';
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+header {
+	padding: 0 15px;
+	position: relative;
+	height: 100px;
+	background: url('body-bg.png');
+	border-bottom: 1px solid #ecf0f1;
+}
+#container {
+	width: 98%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.logo {
+	float: left;
+	margin-top: 10px;
+	line-height: 1em;
+}
+.logo a {
+	font-size: 1.6em;
+}
+
+.logo p {
+	margin-left: 15px;
+	font-family: 'Josefin Slab'
+}
+.contact-link {
+	float: right;
+	font-size: 0.7em;
+}
+
+#nav {
+	width: 100%;	
+	position: absolute;
+	bottom: 0;
+	right:0;
+	left: 0;
+	list-style-type:none;
+	text-align: center;
+}
+
+#nav li {
+	display: inline;
+	margin: 10px; 
+	text-transform: uppercase;
+	font-weight: 500;
+	
+
+
+}
