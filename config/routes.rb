@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :events
+
+  devise_for :users
   root 'staticpages#welcome'
 
   # The priority is based upon order of creation: first created -> highest priority.

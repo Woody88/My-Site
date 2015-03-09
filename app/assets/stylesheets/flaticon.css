@@ -1,0 +1,124 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-add88:before {
+	content: "\e000";
+}
+.flaticon-agenda8:before {
+	content: "\e001";
+}
+.flaticon-ask3:before {
+	content: "\e002";
+}
+.flaticon-atom29:before {
+	content: "\e003";
+}
+.flaticon-blog1:before {
+	content: "\e004";
+}
+.flaticon-blog4:before {
+	content: "\e005";
+}
+.flaticon-book263:before {
+	content: "\e006";
+}
+.flaticon-business133:before {
+	content: "\e007";
+}
+.flaticon-business134:before {
+	content: "\e008";
+}
+.flaticon-business29:before {
+	content: "\e009";
+}
+.flaticon-businessman35:before {
+	content: "\e00a";
+}
+.flaticon-businessman65:before {
+	content: "\e00b";
+}
+.flaticon-calendar-icons:before {
+	content: "\e00c";
+}
+.flaticon-calendar146:before {
+	content: "\e00d";
+}
+.flaticon-calendar68:before {
+	content: "\e00e";
+}
+.flaticon-college:before {
+	content: "\e00f";
+}
+.flaticon-college1:before {
+	content: "\e010";
+}
+.flaticon-envelope56:before {
+	content: "\e011";
+}
+.flaticon-graduate38:before {
+	content: "\e012";
+}
+.flaticon-graduates:before {
+	content: "\e013";
+}
+.flaticon-male30:before {
+	content: "\e014";
+}
+.flaticon-male80:before {
+	content: "\e015";
+}
+.flaticon-man457:before {
+	content: "\e016";
+}
+.flaticon-man494:before {
+	content: "\e017";
+}
+.flaticon-maths5:before {
+	content: "\e018";
+}
+.flaticon-note59:before {
+	content: "\e019";
+}
+.flaticon-open-book1:before {
+	content: "\e01a";
+}
+.flaticon-pen38:before {
+	content: "\e01b";
+}
+.flaticon-personal33:before {
+	content: "\e01c";
+}
+.flaticon-robot3:before {
+	content: "\e01d";
+}
+.flaticon-schedule3:before {
+	content: "\e01e";
+}
+.flaticon-school3:before {
+	content: "\e01f";
+}
+.flaticon-talk16:before {
+	content: "\e020";
+}
+.flaticon-time5:before {
+	content: "\e021";
+}
+.flaticon-user62:before {
+	content: "\e022";
+}
+.flaticon-user7:before {
+	content: "\e023";
+}

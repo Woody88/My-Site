@@ -9,7 +9,7 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
+ * <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/designmodo" title="Designmodo">Designmodo</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
  *= require_tree .
  *= require_self
  */
@@ -71,11 +71,10 @@ header {
 }
 
 #nav li {
-	display: inline;
-	margin: 10px; 
+	display: inline-block;
 	text-transform: uppercase;
 	font-weight: 500;
 	
-
-
 }
+
+
