@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'charts/completed_tasks'
+
   resources :events
 
   devise_for :users

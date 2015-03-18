@@ -3,57 +3,60 @@
 <html>
 <head>
   <title><%= content_for(:title) ? yield(:title) : 'Woodson Delhia'  %></title>
+    
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div id="container">
-		<header>
+	<header>
+		<div class="logo-wrapper">
 			<div class="logo">
-				<a href="#">Woodson Delhia</a>
-				<p>In pursuit to becoming a Software Developer.</p>
+				<a href="#">Woodson Delhia<span>ウッディ</span></a>
+					<p>In pursuit to becoming a Software Developer.</p>
 			</div>
 
-			<ul id="nav">
-				<li><%= link_to(root_path) do %> 
-						<i class="flaticon-user62"></i> About Me
-					<% end %>
-				</li>
-				<li>
-					<%= link_to('#') do %> 
-						<i class="flaticon-blog1"></i> Blog
-					<% end %>
-				</li>
-				<li>
-					<%= link_to('#') do %> 
-						<i class="flaticon-pen38"></i> School
-					<% end %>
-				</li>
-				<li><%= link_to('#') do %> 
-						<i class="flaticon-calendar-icons"></i> Schedule
-					<% end %>
-				</li>
-				<li><%= link_to('#') do %> 
-						<i class="flaticon-robot3"></i> Projects
-					<% end %>
-				</li>
-				<li>
-					<%= link_to('#') do %> 
-						<i class="flaticon-personal33"></i> Contact Me
-					<% end %>
-				</li>	
-			</ul>
-
-			<div class="contact-link">
-				Contact me | <a href="#">woodsondelhia@hotmail.com</a>
+			<div class="email">
+					<p>Contact me | <a href="#">woodsondelhia@hotmail.com</a></p>
 			</div>
+		</div>
 
-		</header>
-		
-		<%= yield %>
-	</div>
+		<ul id="nav"> 
+				<li class="about"><%= link_to(root_path) do %> 
+					<i class="flaticon-user62"></i> About<span>Me</span>
+					<% end %> 
+				</li> 
+				<li class="blog"> 
+					<%= link_to('#') do %> 
+						<i class="flaticon-blog1"></i> Blog 
+					<% end %> 
+				</li> 
+				<li class="school"> 
+					<%= link_to('#') do %> 
+						<i class="flaticon-pen38"></i> School 
+					<% end %> 
+				</li> 
+				<li class="schedule"><%= link_to('#') do %> 
+						<i class="flaticon-calendar-icons"></i> Schedule 
+					<% end %> 
+				</li> 
+				<li class="projects"><%= link_to('#') do %> 
+						<i class="flaticon-robot3"></i> Projects 
+					<% end %> 
+				</li> 
+				<li class="contact"> 
+					<%= link_to('#') do %> 
+						<i class="flaticon-personal33"></i> Contact<span>Me</span>	 
+					<% end %> 
+				</li> 
+
+			</ul> 
+
+	</header>
+
+	<%= yield %>
+
 </body>
 </html>

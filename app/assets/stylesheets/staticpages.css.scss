@@ -1,27 +1,8 @@
-// Place all the styles related to the staticpages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-.content{
-	width: 100%;
-	margin: 0 auto;
-	
-
+.pic-wrapper{
+	margin-top: -10%;
 }
 
-
-.welcome {
-	margin: 0 auto;
-	text-align: center;
+.pic-wrapper img{
+	height:300px;
+	border: 2px dashed #22313F;
 }
-.pickholder {
-	margin-top: 15px;
-	height: 200px;
-	
-}
-.pickholder img {
-	height: 100%;
-	border-radius: 10%
-}
-
-	
