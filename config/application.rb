@@ -22,5 +22,11 @@ module WoodsonDelhia
     config.serve_static_assets = true
     config.assets.compile = true
     config.assets.digest = true
+
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif,
+                                  "flaticon.ttf",
+                                 "flaticon.eot",
+                                 "flaticon.svg",
+                                 "flaticon.woff")
   end
 end
