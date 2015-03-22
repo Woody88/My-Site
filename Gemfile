@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
-gem 'ruby' '2.0.0'
 gem 'fullcalendar-rails', '~> 2.1.1.0'
 gem 'momentjs-rails'
 gem 'devise'
@@ -42,4 +41,4 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+ruby "2.1.4"
