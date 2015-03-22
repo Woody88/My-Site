@@ -3,13 +3,11 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
-gem "chartkick"
+gem 'ruby' '2.0.0'
 gem 'fullcalendar-rails', '~> 2.1.1.0'
 gem 'momentjs-rails'
 gem 'devise'
 gem 'simple_form'
-gem 'groupdate', '~> 2.1.1'
-gem 'active_median', '~> 0.1.0'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
