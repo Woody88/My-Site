@@ -1,0 +1,77 @@
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flexbox-direction($direction) {
+  -webkit-flex-direction:$direction;
+  -moz-flex-direction:$direction;
+  -ms-flex-direction:$direction;
+  flex-direction:$direction;
+}
+
+@mixin flexbox-justify($position) {
+  -webkit-flex-justify-content:$position;
+  -moz-flex-justify-content:$position;
+  -ms-flex-justify-content:$position;
+  justify-content:$position;
+}
+
+.grid-container {
+	width:100%;
+	max-width: 1200px;
+
+}
+
+
+
+.row {
+	@include flexbox(); 
+	/*background-color: red;*/
+	margin: 1px;
+	width: 100%;
+}
+[class*='col-'] {
+    min-height: 1px; 
+    width: 16.66%; 
+    /*background-color: green;*/
+    margin: 1px 5px;
+}
+
+.col-1 {
+	width: 100%;
+}
+.col-2 {
+	width: 50%;
+}
+
+.col-3 {
+	width: 33.33%; 
+}
+
+.center {
+	@include flexbox-justify(center);
+	-webkit-flex-wrap: wrap;
+}
+
+.row h3 {
+  margin: 16px 0px 0px;
+  font-size: 85%;
+  border-bottom: 1px solid #444;
+}
+
+@media all and (max-width:650px){
+
+	.row {
+		@include flexbox-direction(column);
+	}
+        .col-1{ width: 100%;        }
+        .col-2{ width: 100%;    }
+        .col-3{ width: 100%;    }
+        .col-4{ width: 100%;    }
+        .col-5{ width: 100%;    }
+        .col-6{ width: 100%;      }
+    }
