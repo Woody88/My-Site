@@ -23,10 +23,6 @@ module WoodsonDelhia
     config.assets.compile = true
     config.assets.digest = true
 
-    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif,
-                                  "flaticon.ttf",
-                                 "flaticon.eot",
-                                 "flaticon.svg",
-                                 "flaticon.woff")
+  config.assets.paths << Rails.root.join("app", "assets", "fonts")
   end
 end

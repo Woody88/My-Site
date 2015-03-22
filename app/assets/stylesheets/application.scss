@@ -16,8 +16,6 @@
  *= require_self
  */
 
-@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,300italic,400italic,600italic);
-
 @mixin flexbox() {
   display: -webkit-box;
   display: -moz-box;
@@ -105,7 +103,7 @@ section {
 /***** HEADER *****/
 
 header {
-  background: url('<%= asset_path("body-bg.png") %>') #5CA48D;
+  background: image-url("body-bg.png") #5CA48D;
   width: 98%;
   margin: 0 auto;
   padding: 5px;
@@ -121,6 +119,7 @@ header {
 }
 
 header span {
+  font-family: 'Josefin Slab', sans-serif;
   font-size: 0.4em;
   font-weight: 400;
 }
@@ -133,10 +132,12 @@ header span {
   -webkit-flex-wrap: wrap;
 }
 .logo {
-
+  font-family: 'Josefin Slab', sans-serif;
 }
 
 .logo a {
+  font-family: 'Josefin Slab', sans-serif;
+
   font-size: 1.7em;
 }
 
