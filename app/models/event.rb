@@ -12,16 +12,16 @@ class Event < ActiveRecord::Base
 		case event_type
 
 		when 'School'
-			"orange"
+			"#f39c12"
 
 		when 'Work'
-			"blue"
-
+			"#34495e"
+ 
 		when 'Project'
-			"green"
+			"#27ae60"
 
 		when 'Sport'
-			"red"
+			"#c0392b"
 		else
 			""
 		end
