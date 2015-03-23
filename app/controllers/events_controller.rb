@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
-  respond_to :html
+  respond_to :html, :json
 
   def index
     @events = Event.all
@@ -42,6 +42,6 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :date, :start, :finish, :description, :all_day)
+      params.require(:event).permit(:title, :date, :start, :finish, :description, :all_day, :event_type)
     end
 end

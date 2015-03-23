@@ -2,12 +2,13 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :title %>
-    <%= f.input :date %>
-    <%= f.input :start %>
-    <%= f.input :finish %>
+    <%= f.input :title , label_html: { class: 'simple-form-label' }%>
+    <%= f.input :date, as: :date, as: :string, placeholder: "January 20" %>
+    <%= f.input :start, as: :time, as: :string, placeholder: "10:30"%>
+    <%= f.input :finish, as: :time, as: :string, placeholder: "20:30"%>
     <%= f.input :description %>
     <%= f.input :all_day %>
+    <%= f.input :event_type, :collection => ['School', 'Work', 'Project', 'Sport'] %>
   </div>
 
   <div class="form-actions">
