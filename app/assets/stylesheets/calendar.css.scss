@@ -1,3 +1,30 @@
 // Place all the styles related to the Calendar controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.fc-content {
+	font-size: 50%;
+}
+
+.color-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: baseline;
+}
+.school-color, .work-color
+, .project-color, 
+.sport-color {
+	width: 25%;
+	height: 0.8em;
+	border-radius: 10px;
+}
+
+.school-color { background-color: #f39c12;}
+.work-color {  background-color: #34495e}
+.project-color {  background-color: #27ae60;}
+.sport-color { background-color: #c0392b; }
+
+.color-container span {
+	display: block;
+	 text-transform: uppercase;
+}

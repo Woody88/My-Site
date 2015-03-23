@@ -7,17 +7,17 @@
 
 <p>
   <strong>Date:</strong>
-  <%= @event.date %>
+  <%= @event.date.to_date.to_s(:long) %>
 </p>
 
 <p>
   <strong>Start:</strong>
-  <%= @event.start %>
+  <%= @event.start.to_time.to_s(:time) %>
 </p>
 
 <p>
   <strong>Finish:</strong>
-  <%= @event.finish %>
+  <%= @event.finish.to_time.to_s(:time) %>
 </p>
 
 <p>
@@ -35,5 +35,7 @@
   <%= @event.event_type %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<% if signed_in? %>
+  <%= link_to 'Edit', edit_event_path(@event) %> |
+<% end %>
+<%= link_to 'Back', calendar_path, method: :get %>

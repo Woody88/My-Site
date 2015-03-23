@@ -6,6 +6,8 @@ json.array!(@events) do |event|
   json.description event.description
   json.all_day event.all_day
   json.color event.color_setting
-  json.url event_url(event, format: :json)
+
+  json.url event_url(event, format: :html)
+
 
 end
