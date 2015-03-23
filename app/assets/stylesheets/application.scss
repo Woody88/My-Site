@@ -12,8 +12,9 @@
  *http://bootstrapzero.com/bootstrap-template/facebook
  *http://www.bootply.com/96266
  *http://fortawesome.github.io/Font-Awesome/icons/
- *= require_tree .
+ *= require fullcalendar
  *= require_self
+ *= require_tree .
  */
 
 @mixin flexbox() {
@@ -80,7 +81,8 @@ html, body {
 .container{
   display: table;
   height: 100%; width: 98%;
-  background-color: #ECF0F1;  
+  background-color: #ECF0F1;
+  padding: 10px;  
 }
 
 section {

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'calendar' => 'calendar#index', as:'calendar'
+
   get 'charts/completed_tasks'
 
   resources :events
